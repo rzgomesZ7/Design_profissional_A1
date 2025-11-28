@@ -1,0 +1,207 @@
+/* ===========================================
+   ESTILO GERAL - PROJETO Carros Antigos
+   =========================================== */
+   /* Imagens dos carros – tamanho equilibrado */
+.imagem-grande {
+    display: block;
+    margin: 20px auto;
+    width: 70%;         /* antes era 95% — agora fica mais proporcional */
+    max-width: 800px;   /* limita o tamanho em telas grandes */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    transition: transform 0.25s ease;
+}
+
+.imagem-grande:hover {
+    transform: scale(1.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111; /* Fundo escuro */
+    color: #f5f5f5;         /* Texto claro */
+    line-height: 1.6;
+}
+
+/* ===========================================
+   BARRA DE NAVEGAÇÃO
+   =========================================== */
+nav {
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav .logo img {
+    height: 60px;
+    width: auto;
+    border-radius: 8px;
+}
+
+nav .logo span {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+nav .menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav .menu a:hover {
+    color: #ffcc00;
+}
+
+/* ===========================================
+   SEÇÃO PRINCIPAL (INDEX)
+   =========================================== */
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.coluna1, .coluna2, .carro {
+    margin-bottom: 60px;
+}
+
+/* ====== TITULOS ====== */
+h1, h2 {
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
+/* ====== TEXTOS ====== */
+p {
+    font-size: 18px;
+    color: #f5f5f5;
+    max-width: 900px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+/* ===========================================
+   IMAGENS
+   =========================================== */
+img {
+    display: block;
+    margin: 25px auto;
+    max-width: 85%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* ===========================================
+   MAPA INTERATIVO (EXEMPLO INDEX)
+   =========================================== */
+.mapa {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.mapa iframe {
+    width: 90%;
+    max-width: 1000px;
+    height: 450px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* ===========================================
+   RODAPÉ
+   =========================================== */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 60px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer .redes a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+footer .redes a:hover {
+    text-decoration: underline;
+}
+
+/* ===========================================
+   RESPONSIVIDADE
+   =========================================== */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav .menu {
+        margin-top: 10px;
+    }
+
+    nav .menu a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    img {
+        max-width: 95%;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+/* Imagens grandes apenas para carros */
+.imagem-grande {
+    display: block;
+    margin: 20px auto;
+    width: 95%;        /* aumenta o tamanho (ajuste se quiser 85% / 100%) */
+    max-width: 1200px; /* limite máximo para não estourar em telas grandes */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+    transition: transform 0.25s ease;
+}
+
+.imagem-grande:hover {
+    transform: scale(1.03);
+}

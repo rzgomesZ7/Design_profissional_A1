@@ -18,8 +18,3 @@ Cada subprojeto busca aplicar conceitos de design, usabilidade e estruturação 
 - **HTML** — para marcação e estrutura das páginas. :contentReference[oaicite:2]{index=2}  
 - **CSS** — para estilização das páginas e definição de layout. :contentReference[oaicite:3]{index=3}  
 - **JavaScript** — para adicionar interatividade quando necessário. :contentReference[oaicite:4]{index=4}  
-
-*(Dependendo de cada subprojeto na pasta `Materias`, pode haver combinações diferentes dessas tecnologias — vale detalhar para cada caso.)*
-
-## 📁 Estrutura do repositório
-

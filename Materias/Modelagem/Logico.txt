@@ -1,0 +1,51 @@
+entidade Veiculo {
+  id_veiculo: inteiro [PK]
+  tipo: varchar(20)
+  placa: varchar(10)
+  status: varchar(15)
+  id_rota: inteiro [FK]
+}
+
+entidade Rota {
+  id_rota: inteiro [PK]
+  origem: varchar(50)
+  destino: varchar(50)
+  distancia: decimal(6,2)
+  tempo_estimado: inteiro
+}
+
+entidade Sensor {
+  id_sensor: inteiro [PK]
+  tipo: varchar(20)
+  localizacao: varchar(100)
+  status: varchar(15)
+  id_veiculo: inteiro [FK]
+}
+
+entidade Usuario {
+  id_usuario: inteiro [PK]
+  nome: varchar(50)
+  cpf: varchar(14)
+  tipo_usuario: varchar(20)
+}
+
+entidade TipoUsuario {
+  tipo_usuario: varchar(20) [PK]
+  tarifa: decimal(5,2)
+}
+
+entidade Viagem {
+  id_viagem: inteiro [PK]
+  id_usuario: inteiro [FK]
+  id_veiculo: inteiro [FK]
+  data_hora_inicio: datetime
+  data_hora_fim: datetime
+}
+
+entidade EventoMobilidade {
+  id_evento: inteiro [PK]
+  tipo_evento: varchar(30)
+  localizacao: varchar(100)
+  data_hora: datetime
+  id_sensor: inteiro [FK]
+}
